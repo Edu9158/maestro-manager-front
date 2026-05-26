@@ -3,64 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laboratório de Prática JS</title>
+    <title>Componentes | Prática JS</title>
     <link rel="stylesheet" href="../main.css">
 </head>
 <body>
 
-    <header>
-        <h1>DevLabs 🚀</h1>
-        <button id="btn-theme" class="btn-secondary">Alternar Tema 🌗</button>
-    </header>
-
     <div class="container">
+        
+        <header class="practice-header">
+            <h1>Laboratório de JavaScript</h1>
+            <a href="../index/index.html" class="nav-highlight">← Voltar para a Home</a>
+        </header>
 
-        <section class="card">
-            <h2>1. O clássico Contador</h2>
-            <p>Use o JS para escutar os cliques dos botões e atualizar o número abaixo.</p>
-            <div class="contador-painel" id="contador-valor">0</div>
-            <div class="btn-group">
-                <button id="btn-subtrair" class="btn-danger">Diminuir -</button>
-                <button id="btn-resetar" class="btn-secondary">Resetar</button>
-                <button id="btn-somar" class="btn-success">Aumentar +</button>
-            </div>
-        </section>
-
-        <section class="card">
-            <h2>2. Cadastro com Validação</h2>
-            <p>Intercepte o envio do formulário, valide os campos e evite o recarregamento da página.</p>
-            
-            <form id="meu-formulario">
-                <div class="form-group">
-                    <label for="nome">Nome:</label>
-                    <input type="text" id="nome" placeholder="Digite seu nome">
-                    <div class="error-message" id="erro-nome">O nome precisa ter pelo menos 3 caracteres.</div>
-                </div>
+        <section class="section-box">
+            <h2>Formulário de Cadastro</h2>
+            <form id="meuFormulario">
                 
                 <div class="form-group">
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder="seu-email@provedor.com">
-                    <div class="error-message" id="erro-email">Insira um e-mail válido.</div>
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" class="form-control" placeholder="Ex: João da Silva">
                 </div>
 
-                <button type="submit" style="width: 100%;">Enviar Dados</button>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="joao@exemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="interesse">Qual seu interesse?</label>
+                    <select id="interesse" name="interesse" class="form-control">
+                        <option value="">Selecione uma opção...</option>
+                        <option value="frontend">Front-end</option>
+                        <option value="backend">Back-end</option>
+                        <option value="fullstack">Full-stack</option>
+                    </select>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" id="termos" name="termos">
+                    <label for="termos">Aceito os termos e condições</label>
+                </div>
+
+                <button type="submit" id="btnEnviar" class="btn btn-success">Enviar Dados</button>
+                
+                <p id="mensagemErro" class="error-msg hidden">Por favor, preencha todos os campos corretamente.</p>
             </form>
         </section>
 
-        <section class="card">
-            <h2>3. Lista Dinâmica (To-Do Minimalista)</h2>
-            <p>Pegue o valor do campo e adicione uma nova <code>&lt;li&gt;</code> na lista abaixo ao clicar no botão.</p>
+        <section class="section-box" id="caixaCores">
+            <h2>Interações Diversas</h2>
+            <div class="btn-group">
+                <button id="btnAbrirModal" class="btn btn-purple">Abrir Modal</button>
+                <button id="btnMudarCor" class="btn btn-dark">Mudar cor desta caixa</button>
+            </div>
+        </section>
+
+        <section class="section-box">
+            <h2>Lista Dinâmica de Tarefas</h2>
             
-            <div class="form-group" style="display: flex; gap: 10px;">
-                <input type="text" id="item-input" placeholder="Nova tarefa ou item...">
-                <button id="btn-adicionar">Adicionar</button>
+            <div class="input-group">
+                <input type="text" id="novaTarefa" class="form-control" placeholder="Digite uma nova tarefa...">
+                <button id="btnAdicionarTarefa" class="btn btn-blue">Adicionar</button>
             </div>
 
-            <ul id="lista-dinamica">
-                <li>Item de Exemplo <button class="btn-danger" style="padding: 2px 8px; font-size: 0.8rem;">X</button></li>
+            <ul id="listaTarefas" class="task-list">
+                <li>Estudar variáveis e funções no JS</li>
+                <li>Entender eventos de clique</li>
             </ul>
         </section>
 
     </div>
 
-    <script
+    <div id="meuModal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3>Aviso Importante</h3>
+            <p>Este é um modal de exemplo feito com HTML e CSS puro. Você acabou de manipular o DOM para mostrá-lo!</p>
+            <div class="modal-actions">
+                <button id="btnFecharModal" class="btn btn-danger">Fechar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

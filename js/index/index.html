@@ -3,53 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CodeCraft - Soluções Digitais</title>
+    <title>TechNova | Soluções Digitais</title>
     <link rel="stylesheet" href="../main.css">
 </head>
 <body>
 
-    <header>
-        <div style="font-weight: bold; font-size: 1.5rem; color: var(--primary-color);">CodeCraft 🌐</div>
-        <nav>
-            <a href="../jslab/jslab.html" class="btn-cta">Prática JS ⚡</a>
-        </nav>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">TechNova</a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Sobre</a></li>
+                    <li><a href="../jslab/jslab.html" class="nav-highlight">JS Lab</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <div class="container">
+    <main>
         <section class="hero">
-            <h1>Criamos o Futuro da Web</h1>
-            <p>Transformamos ideias complexas em aplicações digitais elegantes, rápidas e seguras.</p>
-            <a href="" class="btn-cta" style="background-color: white; color: var(--primary-color);">Conhecer Nosso Lab</a>
-        </section>
-
-        <h2 style="text-align: center; margin-bottom: 20px;">Nossos Serviços</h2>
-        <section class="features">
-            <div class="feature-card">
-                <div style="font-size: 2rem; margin-bottom: 10px;">🎨</div>
-                <h3>UI/UX Design</h3>
-                <p>Interfaces modernas focadas na melhor experiência para o usuário final.</p>
-            </div>
-            <div class="feature-card">
-                <div style="font-size: 2rem; margin-bottom: 10px;">💻</div>
-                <h3>Desenvolvimento</h3>
-                <p>Código limpo, otimizado para SEO e componentizado com as melhores práticas.</p>
-            </div>
-            <div class="feature-card">
-                <div style="font-size: 2rem; margin-bottom: 10px;">📊</div>
-                <h3>Otimização</h3>
-                <p>Análise de performance para garantir que seu site carregue em milissegundos.</p>
+            <div class="container">
+                <h2>Transforme sua ideia em realidade</h2>
+                <p>Desenvolvemos soluções de software que ajudam a sua empresa a crescer e se destacar no mercado digital.</p>
+                
+                <button id="btnAcaoPrincipal" class="btn btn-hero">
+                    Comece Agora
+                </button>
             </div>
         </section>
 
-        <section class="card">
-            <h3>Sobre a Nossa Empresa</h3>
-            <p>Fundada com o objetivo de revolucionar o mercado tecnológico, a CodeCraft junta design minimalista com engenharia de software de ponta. Acreditamos que a simplicidade é o último grau da sofisticação digital.</p>
-        </section>
+        <section class="services container">
+            <h3>Nossos Serviços</h3>
+            <div class="grid">
+                
+                <div class="card">
+                    <div class="card-icon">1</div>
+                    <h4>Sites Dinâmicos</h4>
+                    <p>Criamos sites rápidos e responsivos usando as melhores tecnologias do mercado atual.</p>
+                </div>
 
-        <footer>
-            <p>&copy; 2026 CodeCraft Soluções Digitais. Todos os direitos reservados.</p>
-        </footer>
-    </div>
+                <div class="card">
+                    <div class="card-icon">2</div>
+                    <h4>Aplicativos Web</h4>
+                    <p>Sistemas completos que rodam direto no navegador dos seus clientes, sem complicação.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">3</div>
+                    <h4>Automação</h4>
+                    <p>Reduza o trabalho manual automatizando processos repetitivos com JavaScript.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 TechNova Soluções Digitais. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
