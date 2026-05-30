@@ -1,0 +1,61 @@
+:root {
+    --primary-color: #1A5333;
+    --secondary-color: #559671;
+
+    --accent-color: #0D2C1F;
+    --accent-hover-color: #43584f; 
+
+    --background-light-color: #F5E8D6;
+    --background-dark-color: #7e766c;
+    --foreground-primary-color: #C9D9DC;
+    --foreground-alternative-color: #57909a;
+    --foreground-secondary-color: #B5945F;
+    --foreground-detail-color: #56390b;
+}
+
+/* Home Page Navbar */
+
+#home-page-navbar.navbar {
+    background-color: var(--primary-color);
+}
+
+#home-page-navbar a {
+    color: var(--accent-color);
+    font-weight: bold;
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+#navbar-brand {
+    color: var(--accent-color);
+    background-color: var(--background-light-color);
+}
+
+#jslab-btn {
+    background-color: var(--foreground-detail-color);
+    border: none;
+}
+
+/* Hero Section */
+
+#hero-section {
+    background-color: var(--secondary-color);
+}
+
+#hero-section h2,
+#hero-section p {
+    color: var(--foreground-alternative-color);
+}
+
+#action-btn {
+    background-color: var(--accent-color);
+    color: var(--foreground-alternative-color);
+    border: none;
+}
+
+/* Services Section */
+
+#services-section {
+    background-color: var(--background-light-color);
+}
+
