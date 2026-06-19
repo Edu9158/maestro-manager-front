@@ -5,7 +5,7 @@
     --accent-color: #0D2C1F;
     --accent-hover-color: #43584f; 
 
-    --background-light-color: #F5E8D6;
+    --background-light-color: #f5e8d672;
     --background-dark-color: #7e766c;
     --foreground-primary-color: #C9D9DC;
     --foreground-alternative-color: #57909a;
@@ -110,3 +110,40 @@
     from { opacity: 0; }
     to { opacity: 1; }
 }
+
+/* Home Page */
+
+body {
+    background-color: var(--background-light-color); 
+}
+
+main {
+    margin-left: 71px;
+    padding: 2rem;
+    transition: margin-left 0.3s ease-in-out;
+}
+
+/* Cards style */
+.dashboard-card {
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-1px);
+}
+
+/* Placeholders for the charts */
+.placeholder-chart {
+    height: 200px;
+    background-color: rgba(0,0,0,0.03);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--foreground-alternative-color);
+    border-radius: 5px;
+}
+
