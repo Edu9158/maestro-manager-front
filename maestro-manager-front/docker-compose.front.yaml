@@ -1,0 +1,10 @@
+services:
+  maestro-manager-front:
+    build: .
+    ports:
+      - "8080:80"
+    env_file:
+      - .env
+    environment:
+      - API_BASE_URL=${API_BASE_URL:-http://localhost:8000}
+      - PRODUCTS_ENDPOINT=${PRODUCTS_ENDPOINT:-/products}
