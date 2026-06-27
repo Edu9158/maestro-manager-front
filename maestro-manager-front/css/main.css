@@ -125,7 +125,7 @@ main {
 
 /* Cards style */
 .dashboard-card {
-    background-color: white;
+    background-color: black;
     border: none;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -133,7 +133,7 @@ main {
 }
 
 .dashboard-card:hover {
-    transform: translateY(-1px);
+    transform: translateY(-2px);
 }
 
 /* Placeholders for the charts */

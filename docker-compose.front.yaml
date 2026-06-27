@@ -1,0 +1,12 @@
+services:
+  maestro-app:
+    build:
+      context: ./maestro-manager-front
+      dockerfile: dockerfile
+    container_name: maestro_front
+    ports:
+      - "8080:80"
+    env_file:
+      - .env
+    environment:
+      - API_BASE_URL=${API_BASE_URL:-http://localhost:8000}
